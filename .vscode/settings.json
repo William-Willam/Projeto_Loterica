@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "caixa.h": "c",
+        "string.h": "c"
+    }
+}

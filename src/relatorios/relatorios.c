@@ -1,5 +1,5 @@
-#include "includes/relatorios.h"  // Caminho ajustado
-#include "includes/utilidades.h"  // Caminho ajustado
+#include "relatorios.h" 
+#include "utilidades.h"  
 #include <stdio.h>
 
 void menuRelatorios() {

@@ -1,11 +1,20 @@
+#include "caixa.h"
+#include "pagamentos.h"
+#include "relatorios.h"
+#include "utilidades.h"
 #include <stdio.h>
-#include <string.h> // Necessário para strcmp()
-#include "includes/utilidades.h" // Caminho ajustado
-#include "includes/caixa.h"      // Caminho ajustado
-#include "includes/pagamentos.h" // Caminho ajustado
-#include "includes/relatorios.h" // Caminho ajustado
+#include <string.h>
+
+#include <locale.h>
+#ifdef _WIN32
+    #define LOCALE "Portuguese_Brazil.1252"
+#else
+    #define LOCALE "pt_BR.UTF-8"
+#endif
+
 
 int main() {
+    setlocale(LC_ALL, LOCALE);
     char login[20];
     char senha[20];
     int opcaoMenu;
@@ -31,10 +40,10 @@ int main() {
             printf("====================================================\n");
             printf("| 1 - Controle de Caixa                            |\n");
             printf("| 2 - Pagamento (em breve)                         |\n");
-            printf("| 3 - Relatórios (em breve)                        |\n");
+            printf("| 3 - Relatorios (em breve)                        |\n");
             printf("| 0 - Finalizar o acesso                           |\n");
             printf("----------------------------------------------------\n");
-            printf("Escolha uma opção: ");
+            printf("Escolha uma opcao: ");
             scanf("%d", &opcaoMenu);
 
             // Limpa o buffer de entrada após ler um inteiro.

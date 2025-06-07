@@ -1,5 +1,5 @@
-#include "includes/caixa.h"      // Caminho ajustado
-#include "includes/utilidades.h" // Caminho ajustado
+#include "caixa.h"      // Caminho ajustado
+#include "utilidades.h" // Caminho ajustado
 #include <stdio.h>
 #include <string.h> // Para operações com strings como strcpy
 

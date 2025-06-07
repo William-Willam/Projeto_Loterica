@@ -1,4 +1,4 @@
-#include "includes/utilidades.h" // Caminho ajustado
+#include "utilidades.h" 
 #include <stdio.h>
 #include <stdlib.h> // Necessário para system("cls") ou system("clear")
 

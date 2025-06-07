@@ -1,5 +1,5 @@
-#include "includes/pagamentos.h"  // Caminho ajustado
-#include "includes/utilidades.h"  // Caminho ajustado
+#include "pagamentos.h"  
+#include "utilidades.h"  
 #include <stdio.h>
 
 void menuPagamentos() {
